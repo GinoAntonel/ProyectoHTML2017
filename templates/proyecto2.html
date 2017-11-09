@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html style="background-color: darkslategrey">
+
+<head>
+
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  -->
+   
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <link href="../css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="../css/proyecto.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../js/main.js"></script>
+    <script lenguage="JavaScript" type="text/javascript">
+        $(document).ready(function() {
+            $('.carousel').carousel({
+                interval: 3000
+            })
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+      <img src="/home/gino/Escritorio/Ejercicios-HTML/Proyecto-html/static/logo-final-2.png" >
+      </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="proyecto.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="proyecto2.html">Autos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+ <center id="divs">
+        <table style="background-color: darkslategrey">
+            <tr>
+                <!-- filas -->
+
+                <td id="texto-preg"> Modelo </td>
+                <!-- columnas -->
+
+                <td > <input type="text" placeholder="Ingrese su modelo" id="txtModelo"> </td>
+            </tr>
+            <tr>
+                <!-- filas -->
+
+                <td id="texto-preg"> Marca </td>
+                <!-- columnas -->
+
+                <td> <input type="text" placeholder="Ingrese su marca" id="txtMarca"> </td>
+            </tr>
+            <tr>
+                <!-- filas -->
+
+                <td id="texto-preg"> Precio </td>
+                <!-- columnas -->
+
+                <td> <input type="text" placeholder="Ingrese su precio" id="txtPrecio"> </td>
+            </tr>
+            
+            <tr>
+                <!-- filas -->
+
+                <td id="texto-preg"> Estado </td>
+                <!-- columnas -->
+
+                <td> <input type="text" placeholder="Ingrese su estado" id="txtEstado"> </td>
+            </tr>
+            
+            <tr>
+                <!-- filas -->
+
+                <td id="texto-preg"> Email </td>
+                <!-- columnas -->
+
+                <td> <input type="email" placeholder="Ingrese su email" id="txtEmail"> </td>
+            </tr>
+            <tr>
+                <!-- filas -->
+
+                <td></td>
+                <!-- columnas -->
+
+                <td> <input type="button" value="enviar" class="boton" onclick="tomarDatos()"> </td>
+            </tr>
+        </table>
+    </center>
+    <center id="divs">
+    <table>
+        <tr>
+            <td id="texto-preg"> Modelo:</td>
+            <td><div id="lblModelo"></div></td>
+        </tr>
+        <tr>
+            <td id="texto-preg">Marca:</td>
+            <td><div id="lblMarca"></div> </td>
+        </tr>
+        <tr>
+            <td id="texto-preg"> Precio</td>
+            <td><div id="lblPrecio"></div> </td>
+        </tr>
+        <tr>
+            <td id="texto-preg"> Estado</td>
+            <td><div id="lblEstado"></div> </td>
+        </tr>
+    </table>
+    </center>
+  
+  
+  
+  
+  
+  <!--     
+   <div class="row" id="divs">
+    
+    </div>
+    
+    <div class="row" id="divs">
+        <div class="col-md-2"></div>
+        <div><img class="card-img-top" src="../static/mini-cooper/logo.png" alt="Card image cap"></div>
+        <div class="col-md-1"></div>
+        <div class="card" style="width: 20rem;" id="divs">
+            <img class="card-img-top" src="../static/ferrari/ferrari-logo.png" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="card" style="width: 20rem;" id="divs">
+            <img class="card-img-top" src="../static/mini-cooper/frente.png" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="row">
+        <div class="col-md-4">
+    
+        </div>
+    </div> -->
+
+<!--         <div class="row" id="divs">
+        <div class="dropdown" id="divs">
+           <img src="static/mini-cooper/logo1.png" id="img" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        
+           
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="divs">
+                
+                    <div class="card" style="width: 20rem;" id="divs">
+            <img class="card-img-top" src="static/ferrari/ferrari-logo.png" alt="Card image cap">
+            <div class="card-body" id="divs">
+            <div class="dropdown-divider"></div>
+                <p class="card-text">Hi</p>
+            <div class="dropdown-divider"></div>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+                
+            </div>
+        </div>
+            </div> -->
+</body>
+
+</html>
