@@ -50,17 +50,17 @@ background-color: darkslategray;
 }
 
 .botonimagen-negro{
-      background-image:url(../static/cuadrado-negro1.png);
+      background-image:url(https://firebasestorage.googleapis.com/v0/b/proyectoprogramacion-e3521.appspot.com/o/static%2FVarios%2Fcuadrado-negro1.png?alt=media&token=d120e5b9-2b09-437c-9c37-afc08fb95d52);
     width: 57px;
     height: 57px;
     }
 .botonimagen-rojo{
-      background-image:url(../static/cuadrado-rojo1.png);
+      background-image:url(https://firebasestorage.googleapis.com/v0/b/proyectoprogramacion-e3521.appspot.com/o/static%2FVarios%2Fcuadrado-rojo1.png?alt=media&token=902e05ea-8868-4bb3-897c-03d30196a62a);
     width: 57px;
     height: 57px;
     }
 .botonimagen-blanco{
-      background-image:url(../static/cuadrado-blanco.png);
+      background-image:url(https://firebasestorage.googleapis.com/v0/b/proyectoprogramacion-e3521.appspot.com/o/static%2FVarios%2Fcuadrado-blanco.png?alt=media&token=02a9ed78-bb51-490f-9888-02d5ff51b5fb);
     width: 57px;
     height: 57px;
     }
@@ -69,7 +69,19 @@ p{
   font-weight: bold;
   font-size: 2.5em;
   padding-top: 40px;
-}*/
+}
+*/
+.ir-arriba {
+	display:inline-block;
+	padding:20px;
+	background-color: darkblue;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+}
 #clock{
    background-image:url('');
    background-size:cover;
