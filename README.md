@@ -26,5 +26,5 @@ video 4
 **Pagina de los autos:**
 - Todos los autos tienen su propia pagina. En esta abra informacion de diferentes autos pero tambien aca se veran los autos creados por la persona, unicamente si el auto es de la misma marca. Por ejemplo, si el usuario creo un auto de marca Ferrari, este auto se agregara a la pagina "Mis Autos" pero tambien a la pagina "Ferrari"
 
-https://drive.google.com/open?id=1z_LyvM_dRjQe96MJySERc9cnlAIuCrif
+
 ![Video 5](https://drive.google.com/open?id=1z_LyvM_dRjQe96MJySERc9cnlAIuCrif)
