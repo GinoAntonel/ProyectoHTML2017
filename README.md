@@ -10,21 +10,21 @@ video 1
 **Pagina Autos:**
 - En esta pagina el usuario puede ver cualquier auto de cualquier marca. Esta pagina consta de muchas marcas las cuales contienen autos de la misma.
 
-video 2
+https://drive.google.com/open?id=1oncfTn45Kx5SRPFRfClFpcr46vFftcGE
 
 **Pagin Subir Auto:**
 - En esta pagina el usuario puede crear su propio auto. Es muy sencillo de hacerlo, solo tienes que llenar un formulario y luego presionar el boton Guardar. El formulario contiene, datos del auto, datos del usuario y hasta incluye una foto!
 
-video 3
+https://drive.google.com/open?id=1Et4T7Un_PyyS7wgd08nJRjl-U6NIxbPi
 
 **Pagina Mis Autos:**
 
 - En esta pagina se mostraran los autos que el usuario creo anteriormente.
 
-video 4
+https://drive.google.com/open?id=1zRmLp8B0LpzpU2yGfpyf1iH12qfx14FB
 
 **Pagina de los autos:**
 - Todos los autos tienen su propia pagina. En esta abra informacion de diferentes autos pero tambien aca se veran los autos creados por la persona, unicamente si el auto es de la misma marca. Por ejemplo, si el usuario creo un auto de marca Ferrari, este auto se agregara a la pagina "Mis Autos" pero tambien a la pagina "Ferrari"
 
 
-![Video 5](https://drive.google.com/open?id=1z_LyvM_dRjQe96MJySERc9cnlAIuCrif)
+https://drive.google.com/open?id=1z_LyvM_dRjQe96MJySERc9cnlAIuCrif
