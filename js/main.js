@@ -6,7 +6,7 @@ var config = {
     storageBucket: "proyectoprogramacion-e3521.appspot.com",
     messagingSenderId: "352112999600"
 };
-
+//setTimeout("location.href=''", 5000);
 var select;
 $('#chooscat').change(function () {
     select = $(this).find("option:selected").text();
@@ -56,8 +56,8 @@ function tomarDatos() {
         "descripcion": ""
     };
 
-    
-    
+
+
     auto.modelo = document.getElementById("txtModelo").value;
     //auto.marca = document.getElementById("txtMarca").value;
     auto.precio = document.getElementById("txtPrecio").value;
@@ -71,19 +71,19 @@ function tomarDatos() {
 
     escribirDatos(auto);
 
-    //    document.getElementById("lblModelo").innerHTML = modelo;
-    //    document.getElementById("lblMarca").innerHTML = marca;
-    //    document.getElementById("lblPrecio").innerHTML = precio;
-    //    document.getElementById("lblEstado").innerHTML = estado;
-    //
-    //    document.getElementById("lblNombre").innerHTML = nombre;
-    //    document.getElementById("lblApellido").innerHTML = apellido;
-    //    document.getElementById("lblTelefono").innerHTML = telefono;
-    //    document.getElementById("lblEmail").innerHTML = email;
-    //    document.getElementById("lblDescripcion").innerHTML = descripcion;
+        document.getElementById("txtModelo").value = "";
+        document.getElementById("chooscat").value = "Elije una opcion";
+        document.getElementById("txtPrecio").value = "";
+        document.getElementById("txtEstado").value = "";
+        document.getElementById("txtEstado").value = "";
+        document.getElementById("txtNombre").value = "";
+        document.getElementById("txtApellido").value = "";
+        document.getElementById("txtTelefono").value = "";
+        document.getElementById("txtEmail").value = "";
+        document.getElementById("txtDescrpicion").value = "";
+
 
 }
-
 
 function escribirDatos(json) {
     var elemento = firebase.database().ref("/auto/").push(json);
@@ -97,7 +97,7 @@ function escribirDatos(json) {
 }
 
 function leerDatos() {
-    //var div1 = document.getElementById('div1');
+    var div1 = document.getElementById('div1');
     var leadsRef = firebase.database().ref('/auto/');
     leadsRef.on('value', function (snapshot) {
         snapshot.forEach(function (childSnapshot) {
@@ -191,15 +191,68 @@ function leerFerrari() {
                 var p = document.createElement('p');
                 p.classList = "card-text";
 
-                // DIV FOOTER
-                var divCardFooter = document.createElement('div');
-                divCardFooter.classList = "card-footer";
+//                // DIV FOOTER
+//                var divCardFooter = document.c            <input type="button" onclick="mostrarModal()">reateElement('div');
+//                divCardFooter.classList = "card-footer";
 
-                // A
+//                // A
+//                var verMas = document.createElement('a');
+//                verMas.classList = "btn btn-primary";
+//                verMas.type = "button";
+//                verMas.innerHTML = "Ver mas";
+//                verMas.id = snap.val().key;
+//                verMas.setAttribute("data-toggle", "modal");
+//                verMas.setAttribute("data-target", "#modalJs");
+//
+//                var divModal = document.createElement('div');
+//                divModal.classList = "modal fade";
+//                divModal.id = "modalJs";
+//                divModal.setAttribute("tabindex", "-1");
+//                divModal.setAttribute("role", "dialog");
+//                divModal.setAttribute("aria-labelledby", "modalLabelJs");
+//                divModal.setAttribute("aria-hidden", "true");
+//
+//                var divModal2 = document.createElement('div');
+//                divModal2.classList = "modal-dialog"
+//                divModal2.setAttribute("role", "document");
+//
+//                var divModal3 = document.createElement('div');
+//                divModal3.classList = "modal-content"
+//
+//                var divModalHeader = document.createElement('div');
+//                divModalHeader.classList = "modal-header";
+//
+//                var h5 = document.createElement('h5');
+//                h5.classList = "modal-title";
+//                h5.id = "modalLabelJs"
+//
+//                var divModalBody = document.createElement('modal-body');
+//                divModalBody.classList = "modal-body";
+//
+//                var pModal = document.createElement('p')
+//
+//
+//                h5.innerHTML = "Mi auto";
+//
+//                pModal.innerHTML = '<hr>' +
+//                    "Marca: " + childData.select + '<br>' +
+//                    "Precio: " + childData.precio + '<br>' +
+//                    "Estado: " + childData.estado + '<br>' + '<hr>' +
+//                    "Contacto: " + '<br>' +
+//                    "Nombre: " + childData.nombre + '<br>' +
+//                    "Apellido: " + childData.apellido + '<br>' +
+//                    "Telefono: " + childData.telefono + '<br>' +
+//                    "Email: " + childData.email + '<br>' + '<hr>' +
+//                    "Descripcion: " + childData.descripcion;
 
-                //                var a = document.createElement('a');
-                //                a.classList = "btn btn-primary";
-                //                a.href = "misAutos.html"
+//                divModal.append(divModal2);
+//                divModal2.append(divModal3);
+//                divModal3.append(divModalHeader);
+//                divModalHeader.append(h5);
+//                divModal3.append(divModalBody);
+//                divModalBody.append(pModal);
+
+
 
                 // AGREGAMOS LO CREADO
                 divx.append(div);
@@ -208,7 +261,7 @@ function leerFerrari() {
                 divCard.append(divCardBody);
                 divCardBody.append(h4);
                 divCardBody.append(p);
-                divCard.append(divCardFooter);
+
                 //divCardFooter.append(a);
 
                 // SETEAMOS EL TEXTO
@@ -228,6 +281,11 @@ function leerFerrari() {
         })
 
     })
+}
+
+function mostrarModal() {
+    console.log("dsdsd");
+    $('#modalJs').modal('show');
 }
 
 function leerLamborghini() {
@@ -276,11 +334,6 @@ function leerLamborghini() {
                 var divCardFooter = document.createElement('div');
                 divCardFooter.classList = "card-footer";
 
-                // A
-
-                //                var a = document.createElement('a');
-                //                a.classList = "btn btn-primary";
-                //                a.href = "misAutos.html"
 
                 // AGREGAMOS LO CREADO
                 divx.append(div);
@@ -366,7 +419,7 @@ function cambiarFerrari2Negro() {
 }
 
 function cambiarFerrari2Blanco() {
-    document.getElementById("imagen-portada-italia").src="https://firebasestorage.googleapis.com/v0/b/proyectoprogramacion-e3521.appspot.com/o/static%2FFerrari%2FItalia%2FBlanco%2Fportada.png?alt=media&token=3678d4b3-22fd-4ae0-8514-7c1354e59f41"
+    document.getElementById("imagen-portada-italia").src = "https://firebasestorage.googleapis.com/v0/b/proyectoprogramacion-e3521.appspot.com/o/static%2FFerrari%2FItalia%2FBlanco%2Fportada.png?alt=media&token=3678d4b3-22fd-4ae0-8514-7c1354e59f41"
     document.getElementById("imagenItalia1").src =
         "https://firebasestorage.googleapis.com/v0/b/proyectoprogramacion-e3521.appspot.com/o/static%2FFerrari%2FItalia%2FBlanco%2Fportada.png?alt=media&token=3678d4b3-22fd-4ae0-8514-7c1354e59f41";
     document.getElementById("imagenItalia2").src =
@@ -387,8 +440,8 @@ function cambiarFerrari2Blanco() {
         "https://firebasestorage.googleapis.com/v0/b/proyectoprogramacion-e3521.appspot.com/o/static%2FFerrari%2FItalia%2FBlanco%2Fadentro.jpg?alt=media&token=ef1d625e-7550-4e60-a31f-e8e8fcdd190d";
 }
 
-function cambiarFerrari2Rojo(){
-        document.getElementById("imagen-portada-italia").src="https://firebasestorage.googleapis.com/v0/b/proyectoprogramacion-e3521.appspot.com/o/static%2FFerrari%2FItalia%2FRojo%2Ffrente.jpg?alt=media&token=076d580a-9f9b-43d0-be38-42daac5227c0"
+function cambiarFerrari2Rojo() {
+    document.getElementById("imagen-portada-italia").src = "https://firebasestorage.googleapis.com/v0/b/proyectoprogramacion-e3521.appspot.com/o/static%2FFerrari%2FItalia%2FRojo%2Ffrente.jpg?alt=media&token=076d580a-9f9b-43d0-be38-42daac5227c0"
     document.getElementById("imagenItalia1").src =
         "https://firebasestorage.googleapis.com/v0/b/proyectoprogramacion-e3521.appspot.com/o/static%2FFerrari%2FItalia%2FRojo%2Ffrente.jpg?alt=media&token=076d580a-9f9b-43d0-be38-42daac5227c0";
     document.getElementById("imagenItalia2").src =
@@ -419,7 +472,7 @@ $(document).ready(function () {
     }
     if (window.location.href == "file:///home/gino/Escritorio/Ejercicios-HTML/Proyecto-html/templates/ferrari.html") {
         leerFerrari();
-    } 
+    }
     if (window.location.href == "file:///home/gino/Escritorio/Ejercicios-HTML/Proyecto-html/templates/lamborghini.html") {
         leerLamborghini();
     }
