@@ -5,7 +5,7 @@ Este proyecto conciste en una pagina web, en la que el usuario podra ver diferen
 **Pagina Home:**
 - Esta pagina consta de una sesion de fotos, en la cual aparecen diferentes autos de lujo. La funsionde esta pagina, es explicar en que consiste la pagina y cual es su funsionalidad
 
-video 1
+https://drive.google.com/open?id=1oncfTn45Kx5SRPFRfClFpcr46vFftcGE
 
 **Pagina Autos:**
 - En esta pagina el usuario puede ver cualquier auto de cualquier marca. Esta pagina consta de muchas marcas las cuales contienen autos de la misma.
